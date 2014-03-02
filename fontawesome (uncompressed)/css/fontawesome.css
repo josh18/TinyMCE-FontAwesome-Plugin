@@ -1,0 +1,31 @@
+.mce-fontawesome-panel .fa {
+	font-family:FontAwesome !important;
+	cursor:pointer;
+	padding:6px;
+	border-radius:1px;
+}
+
+.mce-fontawesome-panel .fa:hover {
+	background-color:#e3e3e3;
+}
+
+.mce-fontawesome-panel td {
+	
+}
+
+.mce-i-flag {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right:1px;
+	position:relative;
+	top:1px;
+}
+
+.mce-i-flag:before {
+	content: "\f024";
+}
