@@ -18,6 +18,9 @@ A plugin that lets you insert FontAwesome icons via TinyMCE.
         extended_valid_elements: 'span[class]'
         ...
         content_css: '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css';
+        ...
+        toolbar: 'fontawesome';
+        ...
     });
     ```
 - Test it and make sure it works.
