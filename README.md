@@ -1,4 +1,4 @@
-TinyMCE-Font-Awesome-Plugin
+TinyMCE FontAwesome Plugin
 ===========================
 
 ###### v1.0.0
@@ -7,6 +7,7 @@ A plugin that lets you insert FontAwesome icons via TinyMCE.
 
 
 ###Instructions
+- Make sure you have FontAwesome loaded on the page that contains TinyMCE. 
 - Copy the fontawesome folder into your TinyMCE plugins folder.
 - Add this to your TinyMCE script:
 
