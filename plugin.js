@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v1.3.0
+// v1.4.0
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
 	
 	webApplicationIcons = [
@@ -17,6 +17,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf080;'],
 		['&#xf02a;'],
 		['&#xf0c9;'],
+		['&#xf236;'],
 		['&#xf0fc;'],
 		['&#xf0f3;'],
 		['&#xf0a2;'],
@@ -47,6 +48,8 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf191;'],
 		['&#xf152;'],
 		['&#xf151;'],
+		['&#xf218;'],
+		['&#xf217;'],
 		['&#xf20a;'],
 		['&#xf0a3;'],
 		['&#xf00c;'],
@@ -82,6 +85,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf0f5;'],
 		['&#xf1c0;'],
 		['&#xf108;'],
+		['&#xf219;'],
 		['&#xf192;'],
 		['&#xf019;'],
 		['&#xf141;'],
@@ -135,6 +139,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf025;'],
 		['&#xf004;'],
 		['&#xf08a;'],
+		['&#xf21e;'],
 		['&#xf1da;'],
 		['&#xf015;'],
 		['&#xf01c;'],
@@ -167,6 +172,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf10b;'],
 		['&#xf0d6;'],
 		['&#xf186;'],
+		['&#xf21c;'],
 		['&#xf001;'],
 		['&#xf1ea;'],
 		['&#xf1fc;'],
@@ -207,12 +213,14 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf002;'],
 		['&#xf010;'],
 		['&#xf00e;'],
+		['&#xf233;'],
 		['&#xf064;'],
 		['&#xf1e0;'],
 		['&#xf1e1;'],
 		['&#xf14d;'],
 		['&#xf045;'],
 		['&#xf132;'],
+		['&#xf21a;'],
 		['&#xf07a;'],
 		['&#xf090;'],
 		['&#xf08b;'],
@@ -238,6 +246,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf089;'],
 		['&#xf123;'],
 		['&#xf006;'],
+		['&#xf21d;'],
 		['&#xf0f2;'],
 		['&#xf185;'],
 		['&#xf10a;'],
@@ -271,6 +280,9 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf13e;'],
 		['&#xf093;'],
 		['&#xf007;'],
+		['&#xf234;'],
+		['&#xf21b;'],
+		['&#xf235;'],
 		['&#xf0c0;'],
 		['&#xf03d;'],
 		['&#xf027;'],
@@ -291,6 +303,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf171;'],
 		['&#xf172;'],
 		['&#xf15a;'],
+		['&#xf20d;'],
 		['&#xf1f3;'],
 		['&#xf1f2;'],
 		['&#xf1f1;'],
@@ -298,7 +311,9 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf1f5;'],
 		['&#xf1f0;'],
 		['&#xf1cb;'],
+		['&#xf20e;'],
 		['&#xf13c;'],
+		['&#xf210;'],
 		['&#xf1a5;'],
 		['&#xf1bd;'],
 		['&#xf1a6;'],
@@ -307,19 +322,21 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf1a9;'],
 		['&#xf1d1;'],
 		['&#xf09a;'],
+		['&#xf230;'],
 		['&#xf082;'],
 		['&#xf16e;'],
+		['&#xf211;'],
 		['&#xf180;'],
 		['&#xf1d3;'],
 		['&#xf1d2;'],
 		['&#xf09b;'],
 		['&#xf113;'],
 		['&#xf092;'],
-		['&#xf184;'],
 		['&#xf1a0;'],
 		['&#xf0d5;'],
 		['&#xf0d4;'],
 		['&#xf1ee;'],
+		['&#xf184;'],
 		['&#xf1d4;'],
 		['&#xf13b;'],
 		['&#xf16d;'],
@@ -328,25 +345,32 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf1cc;'],
 		['&#xf202;'],
 		['&#xf203;'],
+		['&#xf212;'],
 		['&#xf0e1;'],
 		['&#xf08c;'],
 		['&#xf17c;'],
 		['&#xf136;'],
 		['&#xf20c;'],
+		['&#xf23a;'],
 		['&#xf19b;'],
 		['&#xf18c;'],
 		['&#xf1ed;'],
 		['&#xf1a7;'],
 		['&#xf1a8;'],
 		['&#xf0d2;'],
+		['&#xf231;'],
 		['&#xf0d3;'],
 		['&#xf1d6;'],
 		['&#xf1d0;'],
 		['&#xf1a1;'],
 		['&#xf1a2;'],
 		['&#xf18b;'],
+		['&#xf213;'],
 		['&#xf1e0;'],
 		['&#xf1e1;'],
+		['&#xf214;'],
+		['&#xf215;'],
+		['&#xf216;'],
 		['&#xf17e;'],
 		['&#xf198;'],
 		['&#xf1e7;'],
@@ -365,11 +389,13 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf1e8;'],
 		['&#xf099;'],
 		['&#xf081;'],
+		['&#xf237;'],
 		['&#xf194;'],
 		['&#xf1ca;'],
 		['&#xf189;'],
 		['&#xf18a;'],
 		['&#xf1d7;'],
+		['&#xf232;'],
 		['&#xf17a;'],
 		['&#xf19a;'],
 		['&#xf168;'],
@@ -494,6 +520,24 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf16a;']
 	]
 	
+	transportationIcons = [
+		['&#xf0f9;'],
+		['&#xf206;'],
+		['&#xf207;'],
+		['&#xf1b9;'],
+		['&#xf0fb;'],
+		['&#xf21c;'],
+		['&#xf072;'],
+		['&#xf135;'],
+		['&#xf21a;'],
+		['&#xf197;'],
+		['&#xf239;'],
+		['&#xf1ba;'],
+		['&#xf238;'],
+		['&#xf0d1;'],
+		['&#xf193;']
+	]
+	
 	fileTypeIcons = [
 		['&#xf15b;'],
 		['&#xf1c6;'],
@@ -508,6 +552,22 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf0f6;'],
 		['&#xf1c8;'],
 		['&#xf1c2;']
+	]
+	
+	genderIcons = [
+		['&#xf1db;'],
+		['&#xf222;'],
+		['&#xf227;'],
+		['&#xf229;'],
+		['&#xf22b;'],
+		['&#xf22a;'],
+		['&#xf223;'],
+		['&#xf22c;'],
+		['&#xf224;'],
+		['&#xf225;'],
+		['&#xf221;'],
+		['&#xf226;'],
+		['&#xf228;']
 	]
 	
 	formControlIcons = [
@@ -538,6 +598,20 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf155;']
 	]
 	
+	medicalIcons = [
+		['&#xf0f9;'],
+		['&#xf0fd;'],
+		['&#xf004;'],
+		['&#xf08a;'],
+		['&#xf21e;'],
+		['&#xf0f8;'],
+		['&#xf0fa;'],
+		['&#xf0fe;'],
+		['&#xf0f1;'],
+		['&#xf0f0;'],
+		['&#xf193;']
+	]
+	
 	paymentIcons = [
 		['&#xf1f3;'],
 		['&#xf1f2;'],
@@ -548,17 +622,6 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		['&#xf09d;'],
 		['&#xf1ee;'],
 		['&#xf1ed;']
-	]
-	
-	medicalIcons = [
-		['&#xf0f9;'],
-		['&#xf0fd;'],
-		['&#xf0f8;'],
-		['&#xf0fa;'],
-		['&#xf0fe;'],
-		['&#xf0f1;'],
-		['&#xf0f0;'],
-		['&#xf193;']
 	]
 	
 	spinnerIcons = [
@@ -619,9 +682,12 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		
 		}
 		
-		var panelHtml = groupHtml(webApplicationIcons, "Web Application") + groupHtml(fileTypeIcons, "File Type") + groupHtml(spinnerIcons, "Spinner") + groupHtml(formControlIcons, "Form Control") + groupHtml(currencyIcons, "Currency") + groupHtml(textEditorIcons, "Text Editor") + groupHtml(directionalIcons, "Directional") + groupHtml(videoPlayerIcons, "Video Player") + groupHtml(brandIcons, "Brand") + groupHtml(medicalIcons, "Medical");
+		var panelHtml = groupHtml(webApplicationIcons, "Web Application") + groupHtml(fileTypeIcons, "File Type") + groupHtml(spinnerIcons, "Spinner") + groupHtml(formControlIcons, "Form Control") + groupHtml(currencyIcons, "Currency") + groupHtml(textEditorIcons, "Text Editor") + groupHtml(directionalIcons, "Directional") + groupHtml(videoPlayerIcons, "Video Player") + groupHtml(brandIcons, "Brand") + groupHtml(medicalIcons, "Medical") + groupHtml(transportationIcons, "Transportation") + groupHtml(genderIcons, "Gender") + groupHtml(paymentIcons, "Payment") + groupHtml(chartIcons, "Chart");
 
         win = editor.windowManager.open({
+			autoScroll: true,
+			width: 670,
+    		height: 500,
             title: "Icons",
 			spacing: 20,
            	padding: 10,
