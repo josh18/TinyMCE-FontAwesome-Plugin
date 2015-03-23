@@ -1,7 +1,11 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
 // v1.4.0
+tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
+	
+	var options = editor.settings.fontawesome;
+	var textButton = (options && !options['textButton']) ? '' : 'Icons';
 	
 	webApplicationIcons = [
 		['&#xf042;'],
@@ -781,8 +785,8 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 	});
 	
     editor.addButton('fontawesome', {
-		icon: 'flag',
-        text: 'Icons',
+	icon: 'flag',
+        text: textButton,
         tooltip: 'Icons',
         onclick: showDialog
     });
