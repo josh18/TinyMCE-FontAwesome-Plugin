@@ -1,7 +1,11 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
 // v1.4.0
+tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
+	
+	var options = editor.settings.fontawesome;
+	var textButton = (options && !options['textButton']) ? '' : 'Icons';
 	
 	webApplicationIcons = [
 		['&#xf042;'],
@@ -682,8 +686,9 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		
 		}
 		
-		var panelHtml = groupHtml(webApplicationIcons, "Web Application") + groupHtml(fileTypeIcons, "File Type") + groupHtml(spinnerIcons, "Spinner") + groupHtml(formControlIcons, "Form Control") + groupHtml(currencyIcons, "Currency") + groupHtml(textEditorIcons, "Text Editor") + groupHtml(directionalIcons, "Directional") + groupHtml(videoPlayerIcons, "Video Player") + groupHtml(brandIcons, "Brand") + groupHtml(medicalIcons, "Medical") + groupHtml(transportationIcons, "Transportation") + groupHtml(genderIcons, "Gender") + groupHtml(paymentIcons, "Payment") + groupHtml(chartIcons, "Chart");
-
+		var catalog = tinymce.i18n.data[editor.settings.language];
+		var panelHtml = groupHtml(webApplicationIcons, catalog["Web Application"]) + groupHtml(fileTypeIcons, catalog["File Type"]) + groupHtml(spinnerIcons, catalog["Spinner"]) + groupHtml(formControlIcons, catalog["Form Control"]) + groupHtml(currencyIcons, catalog["Currency"]) + groupHtml(textEditorIcons, catalog["Text Editor"]) + groupHtml(directionalIcons, catalog["Directional"]) + groupHtml(videoPlayerIcons, catalog["Video Player"]) + groupHtml(brandIcons, catalog["Brand"]) + groupHtml(medicalIcons, catalog["Medical"]) + groupHtml(transportationIcons, catalog["Transportation"]) + groupHtml(genderIcons, catalog["Gender"]) + groupHtml(paymentIcons, catalog["Payment"]) + groupHtml(chartIcons, catalog["Chart"]);
+        
         win = editor.windowManager.open({
 			autoScroll: true,
 			width: 670,
@@ -781,8 +786,8 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 	});
 	
     editor.addButton('fontawesome', {
-		icon: 'flag',
-        text: 'Icons',
+	icon: 'flag',
+        text: textButton,
         tooltip: 'Icons',
         onclick: showDialog
     });
