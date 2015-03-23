@@ -21,6 +21,9 @@ A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses Font
         ...
         toolbar: 'fontawesome';
         ...
+        fontawesome: {
+            textButton: false,
+        }
     });
     ```
 - Test it and make sure it works.
