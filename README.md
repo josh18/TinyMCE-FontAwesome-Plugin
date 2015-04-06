@@ -1,6 +1,6 @@
 # TinyMCE FontAwesome Plugin
 
-###### v1.4.0
+###### v1.5.0
 
 A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses FontAwesome v4.3.0.
 
@@ -10,7 +10,7 @@ A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses Font
 - Copy the fontawesome folder into your TinyMCE plugins folder.
 - Add this to your TinyMCE script:
 
-    ```html
+    ```js
     tinymce.init({
         ...
         plugins: 'fontawesome noneditable'

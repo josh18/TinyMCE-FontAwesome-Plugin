@@ -1,7 +1,10 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v1.4.0
+// v1.5.0
+tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
+	
+	var lang = tinymce.util.I18n.data;
 	
 	webApplicationIcons = [
 		['&#xf042;'],
@@ -682,7 +685,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 		
 		}
 		
-		var panelHtml = groupHtml(webApplicationIcons, "Web Application") + groupHtml(fileTypeIcons, "File Type") + groupHtml(spinnerIcons, "Spinner") + groupHtml(formControlIcons, "Form Control") + groupHtml(currencyIcons, "Currency") + groupHtml(textEditorIcons, "Text Editor") + groupHtml(directionalIcons, "Directional") + groupHtml(videoPlayerIcons, "Video Player") + groupHtml(brandIcons, "Brand") + groupHtml(medicalIcons, "Medical") + groupHtml(transportationIcons, "Transportation") + groupHtml(genderIcons, "Gender") + groupHtml(paymentIcons, "Payment") + groupHtml(chartIcons, "Chart");
+		var panelHtml = groupHtml(webApplicationIcons, lang["Web Application"]) + groupHtml(fileTypeIcons, lang["File Type"]) + groupHtml(spinnerIcons, lang["Spinner"]) + groupHtml(formControlIcons, lang["Form Control"]) + groupHtml(currencyIcons, lang["Currency"]) + groupHtml(textEditorIcons, lang["Text Editor"]) + groupHtml(directionalIcons, lang["Directional"]) + groupHtml(videoPlayerIcons, lang["Video Player"]) + groupHtml(brandIcons, lang["Brand"]) + groupHtml(medicalIcons, lang["Medical"]) + groupHtml(transportationIcons, lang["Transportation"]) + groupHtml(genderIcons, lang["Gender"]) + groupHtml(paymentIcons, lang["Payment"]) + groupHtml(chartIcons, lang["Chart"]);
 
         win = editor.windowManager.open({
 			autoScroll: true,
@@ -782,14 +785,14 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 	
     editor.addButton('fontawesome', {
 		icon: 'flag',
-        text: 'Icons',
-        tooltip: 'Icons',
+        text: lang['Icons'],
+        tooltip: lang['Icons'],
         onclick: showDialog
     });
 
     editor.addMenuItem('fontawesome', {
 		icon: 'flag',
-        text: 'Icons',
+        text: lang['Icons'],
         onclick: showDialog,
         context: 'insert'
     });
