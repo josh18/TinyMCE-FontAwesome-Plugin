@@ -6438,62 +6438,62 @@ var json =
   ]
 }
 
-			// Sort the icons alphabetically
-			json["icons"].sort(function (a, b) {
-				if(a["id"] < b["id"]) {
-					return -1;
-				}
-				
-				if(a["id"] > b["id"]){
-					return 1;
-				}
-				
-				return 0;
-			});
-			
-			// Sort the icons into categories
-			var category = [];
-			for (var i = 0; i < json["icons"].length; i++) {
-				for (var ii = 0; ii < json["icons"][i]["categories"].length; ii++) {
-					var categoryName = json["icons"][i]["categories"][ii];
-					category[categoryName] = category[categoryName] || {};
-					category[categoryName][i] = (json["icons"][i]);
-				}
-			}
-			
-			var output = [];
-			for (var i in category) {
-				if (category.hasOwnProperty(i)) {
-					
-					var name = i;
-					name = name.toLowerCase().replace(/ (.)/g, function(match, group1) {
-						return group1.toUpperCase();
-					});
-					var name = name + " = [<br>";
-					
-					var icons = "";
-					var first = true;
-					for (var ii in category[i]) {
-						if (category[i].hasOwnProperty(ii)) {
-							if (first) {
-								icons += "&#09;['&amp;#x" + category[i][ii]["unicode"] + ";']";
-								first = false;
-							}
-							else {
-								icons += ",<br>&#09;['&amp;#x" + category[i][ii]["unicode"] + ";']";
-							}
-						}
-					}
-					output.push(name + icons);
-				}
-			}
-			
-			// Sort by number of icons in category
-			output.sort(function(a, b){
-				return b.length - a.length;
-			});
-			
-			document.write("<pre>" + output.join("<br>]<br><br>") + "<br>]</pre>");
+            // Sort the icons alphabetically
+            json["icons"].sort(function (a, b) {
+                if(a["id"] < b["id"]) {
+                    return -1;
+                }
+                
+                if(a["id"] > b["id"]){
+                    return 1;
+                }
+                
+                return 0;
+            });
+            
+            // Sort the icons into categories
+            var category = [];
+            for (var i = 0; i < json["icons"].length; i++) {
+                for (var ii = 0; ii < json["icons"][i]["categories"].length; ii++) {
+                    var categoryName = json["icons"][i]["categories"][ii];
+                    category[categoryName] = category[categoryName] || {};
+                    category[categoryName][i] = (json["icons"][i]);
+                }
+            }
+            
+            var output = [];
+            for (var i in category) {
+                if (category.hasOwnProperty(i)) {
+                    
+                    var name = i;
+                    name = name.toLowerCase().replace(/ (.)/g, function(match, group1) {
+                        return group1.toUpperCase();
+                    });
+                    var name = name + " = [<br>";
+                    
+                    var icons = "";
+                    var first = true;
+                    for (var ii in category[i]) {
+                        if (category[i].hasOwnProperty(ii)) {
+                            if (first) {
+                                icons += "&#09;['&amp;#x" + category[i][ii]["unicode"] + ";']";
+                                first = false;
+                            }
+                            else {
+                                icons += ",<br>&#09;['&amp;#x" + category[i][ii]["unicode"] + ";']";
+                            }
+                        }
+                    }
+                    output.push(name + icons);
+                }
+            }
+            
+            // Sort by number of icons in category
+            output.sort(function(a, b){
+                return b.length - a.length;
+            });
+            
+            document.write("<pre>" + output.join("<br>]<br><br>") + "<br>]</pre>");
         </script>
         
     </body>
