@@ -685,7 +685,20 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
         
         }
         
-        var panelHtml = groupHtml(webApplicationIcons, lang['Web Application']) + groupHtml(fileTypeIcons, lang['File Type']) + groupHtml(spinnerIcons, lang['Spinner']) + groupHtml(formControlIcons, lang['Form Control']) + groupHtml(currencyIcons, lang['Currency']) + groupHtml(textEditorIcons, lang['Text Editor']) + groupHtml(directionalIcons, lang['Directional']) + groupHtml(videoPlayerIcons, lang['Video Player']) + groupHtml(brandIcons, lang['Brand']) + groupHtml(medicalIcons, lang['Medical']) + groupHtml(transportationIcons, lang['Transportation']) + groupHtml(genderIcons, lang['Gender']) + groupHtml(paymentIcons, lang['Payment']) + groupHtml(chartIcons, lang['Chart']);
+        var panelHtml = groupHtml(webApplicationIcons, tinymce.util.I18n.translate('Web Application'))
+                      + groupHtml(fileTypeIcons, tinymce.util.I18n.translate('File Type'))
+                      + groupHtml(spinnerIcons, tinymce.util.I18n.translate('Spinner'))
+                      + groupHtml(formControlIcons, tinymce.util.I18n.translate('Form Control'))
+                      + groupHtml(currencyIcons, tinymce.util.I18n.translate('Currency'))
+                      + groupHtml(textEditorIcons, tinymce.util.I18n.translate('Text Editor'))
+                      + groupHtml(directionalIcons, tinymce.util.I18n.translate('Directional'))
+                      + groupHtml(videoPlayerIcons, tinymce.util.I18n.translate('Video Player'))
+                      + groupHtml(brandIcons, tinymce.util.I18n.translate('Brand'))
+                      + groupHtml(medicalIcons, tinymce.util.I18n.translate('Medical'))
+                      + groupHtml(transportationIcons, tinymce.util.I18n.translate('Transportation'))
+                      + groupHtml(genderIcons, tinymce.util.I18n.translate('Gender'))
+                      + groupHtml(paymentIcons, tinymce.util.I18n.translate('Payment'))
+                      + groupHtml(chartIcons, tinymce.util.I18n.translate('Chart'));
 
         win = editor.windowManager.open({
             autoScroll: true,
@@ -693,7 +706,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
             height: 500,
             title: 'Icons',
             spacing: 20,
-               padding: 10,
+            padding: 10,
             classes: 'fontawesome-panel',
             items: [
                 {
@@ -784,14 +797,13 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
     editor.addButton('fontawesome', {
         icon: 'flag',
-        text: lang['Icons'],
-        tooltip: lang['Icons'],
+        tooltip: 'Icons',
         onclick: showDialog
     });
 
     editor.addMenuItem('fontawesome', {
         icon: 'flag',
-        text: lang['Icons'],
+        text: 'Icons',
         onclick: showDialog,
         context: 'insert'
     });
