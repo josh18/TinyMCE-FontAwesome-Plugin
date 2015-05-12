@@ -1,11 +1,11 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v1.5.0
+// v1.5.1
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
-    var lang = tinymce.util.I18n.data;
-    
+    var translate = tinymce.util.I18n.translate;
+
     var webApplicationIcons = [
         ['&#xf042;'],
         ['&#xf13d;'],
@@ -685,7 +685,20 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
         
         }
         
-        var panelHtml = groupHtml(webApplicationIcons, lang['Web Application']) + groupHtml(fileTypeIcons, lang['File Type']) + groupHtml(spinnerIcons, lang['Spinner']) + groupHtml(formControlIcons, lang['Form Control']) + groupHtml(currencyIcons, lang['Currency']) + groupHtml(textEditorIcons, lang['Text Editor']) + groupHtml(directionalIcons, lang['Directional']) + groupHtml(videoPlayerIcons, lang['Video Player']) + groupHtml(brandIcons, lang['Brand']) + groupHtml(medicalIcons, lang['Medical']) + groupHtml(transportationIcons, lang['Transportation']) + groupHtml(genderIcons, lang['Gender']) + groupHtml(paymentIcons, lang['Payment']) + groupHtml(chartIcons, lang['Chart']);
+        var panelHtml = groupHtml(webApplicationIcons, translate('Web Application'))
+                      + groupHtml(fileTypeIcons, translate('File Type'))
+                      + groupHtml(spinnerIcons, translate('Spinner'))
+                      + groupHtml(formControlIcons, translate('Form Control'))
+                      + groupHtml(currencyIcons, translate('Currency'))
+                      + groupHtml(textEditorIcons, translate('Text Editor'))
+                      + groupHtml(directionalIcons, translate('Directional'))
+                      + groupHtml(videoPlayerIcons, translate('Video Player'))
+                      + groupHtml(brandIcons, translate('Brand'))
+                      + groupHtml(medicalIcons, translate('Medical'))
+                      + groupHtml(transportationIcons, translate('Transportation'))
+                      + groupHtml(genderIcons, translate('Gender'))
+                      + groupHtml(paymentIcons, translate('Payment'))
+                      + groupHtml(chartIcons, translate('Chart'));
 
         win = editor.windowManager.open({
             autoScroll: true,
@@ -693,7 +706,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
             height: 500,
             title: 'Icons',
             spacing: 20,
-               padding: 10,
+            padding: 10,
             classes: 'fontawesome-panel',
             items: [
                 {
@@ -784,14 +797,14 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
     editor.addButton('fontawesome', {
         icon: 'flag',
-        text: lang['Icons'],
-        tooltip: lang['Icons'],
+        text: translate('Icons'),
+        tooltip: translate('Icons'),
         onclick: showDialog
     });
 
     editor.addMenuItem('fontawesome', {
         icon: 'flag',
-        text: lang['Icons'],
+        text: translate('Icons'),
         onclick: showDialog,
         context: 'insert'
     });
