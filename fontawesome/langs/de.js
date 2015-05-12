@@ -1,5 +1,5 @@
 tinymce.addI18n('de', {
-    'Icons': 'Font-Awesome Icons',
+    'Icons': 'Icons',
     'Web Application': 'Web-Anwendung',
     'File Type': 'Dateitypen',
     'Spinner': 'Drehend',
