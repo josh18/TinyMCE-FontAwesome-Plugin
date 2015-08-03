@@ -13,5 +13,6 @@ tinymce.addI18n('de', {
     'Transportation': 'Transport',
     'Gender': 'Geschlecht',
     'Payment': 'Bezahlung',
-    'Chart': 'Diagramm'
+    'Chart': 'Diagramm',
+    'Hand': 'Hand'
 });

@@ -1,8 +1,8 @@
 # TinyMCE FontAwesome Plugin
 
-###### v1.5.1
+###### v1.6.0
 
-A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses FontAwesome v4.3.0 and is tested on TinyMCE v4.1.10.
+A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses FontAwesome v4.4.0 and is tested on TinyMCE v4.1.10.
 
 
 ### Instructions
@@ -17,7 +17,7 @@ A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses Font
         ...
         extended_valid_elements: 'span[class]'
         ...
-        content_css: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+        content_css: '//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
         ...
         toolbar: 'fontawesome';
         ...

@@ -13,5 +13,6 @@ tinymce.addI18n('es', {
     'Transportation': 'Transportes',
     'Gender': 'Géneros',
     'Payment': 'Formas de Pago',
-    'Chart': 'Gráficos'
+    'Chart': 'Gráficos',
+    'Hand': 'Mano'
 });
