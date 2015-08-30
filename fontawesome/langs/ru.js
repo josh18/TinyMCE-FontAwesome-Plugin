@@ -10,7 +10,7 @@ tinymce.addI18n('ru', {
     'Video Player': 'Видео-плеер',
     'Brand': 'Бренды',
     'Medical': 'Медицина',
-    'Transportation': 'Transportation',
+    'Transportation': 'Транспорт',
     'Gender': 'Гендерные иконки',
     'Payment': 'Платежные системы',
     'Chart': 'Диаграммы',
