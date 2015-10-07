@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v1.6.0
+// v1.7.0
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
