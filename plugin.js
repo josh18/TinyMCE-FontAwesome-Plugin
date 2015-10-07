@@ -756,7 +756,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
                 for (var x = 0; x < width; x++) {
                     if (iconGroup[y * width + x]) {
-                        if (iconTitle === 'Spinner') {
+                        if (iconTitle === translate('Spinner')) {
                             gridHtml += '<td><span class="fa fa-spin mceNonEditable">' + iconGroup[y * width + x] + '</span></td>';
                         }
                         else {
