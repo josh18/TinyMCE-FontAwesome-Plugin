@@ -1,11 +1,6 @@
-/**
- * Created by Josh Hunt
- * joshhunt180@gmail.com
- *
- * Edited by C. Sauthoff <sauthoff@intended-media.de>
- *
- * v2.0
- */
+// Created by Josh Hunt
+// joshhunt180@gmail.com
+// v2.0.0
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function (editor, url) {
     
