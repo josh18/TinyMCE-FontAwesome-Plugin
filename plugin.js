@@ -4296,10 +4296,10 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
             }]
         });
 
-        
         // Accordion
         var accordionItems = [],
-            divs = win.$el[0].getElementsByTagName('div');
+            winContainer = (win.$el ? win.$el[0] : document.getElementById(win._id));
+            divs = winContainer.getElementsByTagName('div');
         for (var i = 0; i < divs.length; i++) {
             if (divs[i].className == 'mce-fontawesome-panel-accordion' || divs[i].className == 'mce-fontawesome-panel-accordion mce-fontawesome-panel-accordion-hide') {
                 accordionItems.push(divs[i]);
@@ -4353,7 +4353,7 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
 
 
         // Initialize search input
-        var foot = win.$el[0].getElementsByClassName('mce-foot')[0].getElementsByClassName('mce-container-body')[0];
+        var foot = winContainer.getElementsByClassName('mce-foot')[0].getElementsByClassName('mce-container-body')[0];
         var searchContainer = document.createElement('DIV');
         searchContainer.className = 'search-container';
         searchContainer.innerHTML = '<input type="text" class="search-mask" placeholder="' + translate('Search icons...') + '" />';
@@ -4362,15 +4362,15 @@ tinymce.PluginManager.add('fontawesome', function (editor, url) {
         var searchInput = searchContainer.childNodes[0];
         searchInput.onpaste = function() { this.onkeyup(); };
         searchInput.onkeyup = function() {
-            var allElements = win.$el[0].getElementsByClassName('mce-icon-cell');
+            var allElements = winContainer.getElementsByClassName('mce-icon-cell');
             var searchTerm = this.value.toLowerCase();
 
             if( !this.value.length ) { // Reset search
                 // Remove search class
-                win.$el[0].className = win.$el[0].className.replace('mce-fontawesome-search', '').trim();
+                winContainer.className = winContainer.className.replace('mce-fontawesome-search', '').trim();
             } else {
                 // Add search class
-                win.$el[0].className = win.$el[0].className.replace('mce-fontawesome-search', '').trim() + ' mce-fontawesome-search';
+                winContainer.className = winContainer.className.replace('mce-fontawesome-search', '').trim() + ' mce-fontawesome-search';
                 
                 // Hide all tabs
                 for (var i = 0; i < accordionItems.length; i++)
