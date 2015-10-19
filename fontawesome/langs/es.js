@@ -14,5 +14,6 @@ tinymce.addI18n('es', {
     'Gender': 'Géneros',
     'Payment': 'Formas de Pago',
     'Chart': 'Gráficos',
-    'Hand': 'Mano'
+    'Hand': 'Mano',
+    'Search icons...': 'Búsqueda iconos ...'
 });
