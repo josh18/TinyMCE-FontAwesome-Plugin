@@ -16,6 +16,5 @@ tinymce.addI18n('es', {
     'Chart': 'Gráficos',
     'Hand': 'Mano',
     'Search': 'Buscar',
-    'Close': 'Cerca',
     'No icons matched your search': 'No hay iconos que coincidan con tu búsqueda'
 });

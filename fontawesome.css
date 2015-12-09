@@ -109,9 +109,9 @@
     padding: 0 25px 0 25px;
     border: 0 solid;
     border-bottom: 1px solid rgba(0,0,0,.2);
-    -moz-appearance:    textfield;
     -webkit-appearance: textfield;
-    appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
 }
 
 .mce-fontawesome-search-container input::-webkit-input-placeholder {
@@ -144,9 +144,9 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-right:1px;
-    position:relative;
-    top:1px;
+    margin-right: 1px;
+    position: relative;
+    top: 1px;
 }
 
 .mce-i-flag:before {

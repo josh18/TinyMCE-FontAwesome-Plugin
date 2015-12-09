@@ -16,6 +16,5 @@ tinymce.addI18n('de', {
     'Chart': 'Diagramm',
     'Hand': 'Hand',
     'Search': 'Suchen',
-    'Close': 'Nah dran',
     'No icons matched your search': 'Keine Icons entsprechen Ihrer Suche'
 });

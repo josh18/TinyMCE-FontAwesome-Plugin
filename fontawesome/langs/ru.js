@@ -16,6 +16,5 @@ tinymce.addI18n('ru', {
     'Chart': 'Диаграммы',
     'Hand': 'Иконки жестов',
     'Search': 'поисковый',
-    'Close': 'Закрыть',
     'No icons matched your search': 'Значки не соответствуют Вашему запросу'
 });

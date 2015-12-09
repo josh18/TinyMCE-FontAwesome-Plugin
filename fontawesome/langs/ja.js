@@ -16,6 +16,5 @@ tinymce.addI18n('ja', {
     'Chart': 'チャート',
     'Hand': '手',
     'Search': '検索',
-    'Close': 'クローズ',
     'No icons matched your search': 'いいえアイコンは、検索条件に一致しません'
 });
