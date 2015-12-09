@@ -14,5 +14,7 @@ tinymce.addI18n('de', {
     'Gender': 'Geschlecht',
     'Payment': 'Bezahlung',
     'Chart': 'Diagramm',
-    'Hand': 'Hand'
+    'Hand': 'Hand',
+    'Search': 'Suchen',
+    'No icons matched your search': 'Keine Icons entsprechen Ihrer Suche'
 });
