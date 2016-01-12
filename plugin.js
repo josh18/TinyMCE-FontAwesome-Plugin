@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v2.0.2
+// v2.0.3
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
@@ -328,9 +328,12 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
         var icons = content.querySelectorAll('.fa');
 
         for (var i = 0; i < icons.length; i++) {
-            // Makes TinyMCE treat the icon as a single character
-            icons[i].classList.add('mceNonEditable');
-            icons[i].innerHTML = '&#65279';
+            // If the .fa element already has an icon in it leave it alone, this lets icons from previous plugin versions show
+            if (!icons[i].innerHTML) {
+                // Makes TinyMCE treat the icon as a single character
+                icons[i].classList.add('mceNonEditable');
+                icons[i].innerHTML = '&#65279';
+            }
         }
 
         e.content = content.body.innerHTML;
@@ -343,9 +346,12 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
         var icons = content.querySelectorAll('.fa');
 
         for (var i = 0; i < icons.length; i++) {
-            // Remove the helper class / content on save
-            icons[i].classList.remove('mceNonEditable');
-            icons[i].innerHTML = '';
+            // Don't mess with icons unless they contain the special character
+            if (icons[i].innerHTML === '&#65279') {
+                // Remove the helper class / content on save
+                icons[i].classList.remove('mceNonEditable');
+                icons[i].innerHTML = '';
+            }
         }
 
         e.content = content.body.innerHTML;
