@@ -16,5 +16,5 @@ tinymce.addI18n('fr', {
     'Chart': 'Diagramme',
     'Hand': 'Main',
     'Search': 'Recherche',
-    'No icons matched your search': 'Auncune icône correspondant à votre recherche'
+    'No icons matched your search': 'Aucune icône correspondant à votre recherche'
 });
