@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v2.0.4
+// v2.0.5
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
@@ -61,7 +61,6 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
                 }
                 gridHtml += '</div>';
             gridHtml += '</div>';
-            gridHtml += '<p class="mce-fontawesome-search-noresults" style="display: none;">' + translate('No icons matched your search') + '.</p>';
 
             return gridHtml;
         }
@@ -83,7 +82,8 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
                       + groupHtml('genderIcons', translate('Gender'))
                       + groupHtml('paymentIcons', translate('Payment'))
                       + groupHtml('chartIcons', translate('Chart'))
-                      + groupHtml('handIcons', translate('Hand'));
+                      + groupHtml('handIcons', translate('Hand'))
+                      + '<p class="mce-fontawesome-search-noresults" style="display: none;">' + translate('No icons matched your search') + '.</p>';
 
         win = editor.windowManager.open({
             autoScroll: true,
@@ -334,7 +334,9 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             }
         }
 
-        e.content = content.body.innerHTML;
+        if (content.body) {
+            e.content = content.body.innerHTML;
+        }
     });
 
     // // Fires after content has been extracted from the editor
@@ -352,7 +354,9 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             }
         }
 
-        e.content = content.body.innerHTML;
+        if (content.body) {
+            e.content = content.body.innerHTML;
+        }
     });
 
     editor.addButton('fontawesome', {
