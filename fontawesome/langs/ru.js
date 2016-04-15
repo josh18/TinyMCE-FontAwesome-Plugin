@@ -15,6 +15,6 @@ tinymce.addI18n('ru', {
     'Payment': 'Платежные системы',
     'Chart': 'Диаграммы',
     'Hand': 'Иконки жестов',
-    'Search': 'поисковый',
+    'Search': 'поиск',
     'No icons matched your search': 'Значки не соответствуют Вашему запросу'
 });
