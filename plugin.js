@@ -113,7 +113,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             if (this.hasAttribute('data-spin')) {
                 id += ' fa-spin';
             }
-            editor.execCommand('mceInsertContent', false, '<span class="fa fa-' + id + '">&#65279</span>');
+            editor.execCommand('mceInsertContent', false, '<span class="mceNonEditable fa fa-' + id + '">&#65279</span>');
             win.close();
         }
 
