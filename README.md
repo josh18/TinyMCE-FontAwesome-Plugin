@@ -22,6 +22,15 @@ A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses Font
         toolbar: 'fontawesome';
         ...
     });
-    ```
+    ```    
+** Installation TinyMCE-FontAwesome-Plugin on Jooma/
+1. Copy folder “fontawesome” from archive TinyMCE-FontAwesome-Plugin-master.zip to [HOME_DIR]:/media/editors/tinymce/plugins/
+2. Go to joomla admin panel, Choose at main menu “Extensions”>” Plugins”, search “Editor - TinyMCE”, open it config, to field “Valid Elements” add this (+a[],+i[],+em[],+li[],+span[],+div[]) without()!
+3. To field “Custom CSS Classes” add: (http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css) without(), prefix “http://” is important.
+4. Go to “Advanced” tab and to field “Custom Plugin” add word (fontawesome) without() too.
+5. Save plugins config. 
+6. If you do not see icons in the toolbar of TinyMCE, add the line (http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css) without() to config administrative panel template
+**
 - Test it and make sure it works.
 - If you find something broken or if you have any suggestions feel free to create an issue.
+
