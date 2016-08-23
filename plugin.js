@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v2.0.6
+// v2.0.7
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
@@ -143,7 +143,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
         var firstAccordionContent = firstAccordion.querySelector('.mce-fontawesome-panel-content');
         firstAccordionContent.style.height = 'auto';
-        var nextHeight = Math.ceil(firstAccordionContent.getBoundingClientRect().height);
+        var nextHeight = Math.ceil(firstAccordionContent.offsetHeight);
         firstAccordionContent.style.height = nextHeight + 'px';
         firstAccordionContent.style.transitionDuration = transitionCalc(nextHeight);
 
@@ -173,7 +173,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
                 var accordionItemContent = accordionItem.querySelector('.mce-fontawesome-panel-content');
 
                 accordionItemContent.style.height = 'auto';
-                var nextHeight = Math.ceil(accordionItemContent.getBoundingClientRect().height);
+                var nextHeight = Math.ceil(accordionItemContent.offsetHeight);
                 accordionItemContent.style.height = '0';
                 accordionItem.classList.add('mce-fontawesome-panel-accordion-open');
                 accordionItemContent.style.transitionDuration = transitionCalc(nextHeight);
