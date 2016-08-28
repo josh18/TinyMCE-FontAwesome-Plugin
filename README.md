@@ -32,7 +32,7 @@ tinymce.init({
     4. Go to the "Advanced" tab.
     5. In the "Custom Plugin" field add `fontawesome noneditable`.
     6. In the "Custom Button" field add `fontawesome`.
-    7. Add `noneditable_noneditable_class: 'fa'` to `tinymce.init()`. *Not sure how to do this.*.
+    7. Add `noneditable_noneditable_class: 'fa'` to `tinymce.init()`. *Not sure how to do this.*
     8. Save the plugin.
 
 ### Issues
