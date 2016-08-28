@@ -1,6 +1,6 @@
 // Created by Josh Hunt
 // joshhunt180@gmail.com
-// v2.0.7
+// v2.0.8
 tinymce.PluginManager.requireLangPack('fontawesome');
 tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
@@ -318,40 +318,6 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             href: url + '/css/fontawesome.min.css'
         });
         document.getElementsByTagName('head')[0].appendChild(csslink);
-    });
-
-    // Fires before content is inserted into the editor
-    editor.on('BeforeSetContent', function(e) {
-        var parser = new DOMParser();
-        var content = parser.parseFromString(e.content, 'text/html');
-        var icons = content.querySelectorAll('.fa');
-
-        for (var i = 0; i < icons.length; i++) {
-            // Makes TinyMCE treat the icon as a single character
-            icons[i].classList.add('mceNonEditable');
-            icons[i].innerHTML = '&#65279;';
-        }
-
-        if (content.body) {
-            e.content = content.body.innerHTML;
-        }
-    });
-
-    // // Fires after content has been extracted from the editor
-    editor.on('GetContent', function(e) {
-        var parser = new DOMParser();
-        var content = parser.parseFromString(e.content, 'text/html');
-        var icons = content.querySelectorAll('.fa');
-
-        for (var i = 0; i < icons.length; i++) {
-            // Remove the helper class / content on save
-            icons[i].classList.remove('mceNonEditable');
-            icons[i].innerHTML = '';
-        }
-
-        if (content.body) {
-            e.content = content.body.innerHTML;
-        }
     });
 
     editor.addButton('fontawesome', {
