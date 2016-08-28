@@ -21,7 +21,7 @@ tinymce.init({
 ```
 
 ### Joomla Instructions
-** Note: I'm not sure how to do add `noneditable_noneditable_class: 'fa'` to `tinymce.init()` in Joomla. I had a quick look but I couldn't see a way. Perhaps the Joomla TinyMCE plugin needs to be modified to include this option.**
+**Note: I'm not sure how to do add `noneditable_noneditable_class: 'fa'` to `tinymce.init()` in Joomla. I had a quick look but I couldn't see a way. Perhaps the Joomla TinyMCE plugin needs to be modified to include this option.**
 
 1. Make sure you have FontAwesome loaded on the page that contains TinyMCE. If you don't add `http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css` [directly to the template](https://docs.joomla.org/J3.x:Adding_JavaScript_and_CSS_to_the_page) or use [this plugin](https://thekrotek.com/joomla-extensions/admin-custom-css) to add it.
 2. Copy the `fontawesome` folder from this repository into `/media/editors/tinymce/plugins/`.
