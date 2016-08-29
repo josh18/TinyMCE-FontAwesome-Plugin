@@ -16,7 +16,7 @@ tinymce.init({
     noneditable_noneditable_class: 'fa',
     plugins: 'fontawesome noneditable',
     toolbar: 'fontawesome',
-    valid_elements: 'span[*]'
+    extended_valid_elements: 'span[*]'
 });
 ```
 
@@ -28,7 +28,7 @@ tinymce.init({
 3. Go to Joomla admin panel. In the top menu choose "Extensions" > "Plugins". Search for `Editor - TinyMCE` and then click on the result.
     1. Change "Functionality" to `Advanced`.
     2. In the "Custom CSS Classes" field add `https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css`.
-    3. In the "Valid Elements" field add `span[*]`.
+    3. In the "Extended Valid Elements" field add `span[*]`.
     4. Go to the "Advanced" tab.
     5. In the "Custom Plugin" field add `fontawesome noneditable`.
     6. In the "Custom Button" field add `fontawesome`.
