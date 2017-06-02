@@ -45,7 +45,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             var id;
 
             gridHtml = '<div class="mce-fontawesome-panel-accordion">';
-                gridHtml += '<div class="mce-fontawesome-panel-title">' + iconTitle + '</div>';
+                gridHtml += '<div class="mce-fontawesome-panel-title">' + iconTitle + ' <span class="mce-fontawesome-accordion-icon fa-chevron-right" style="font-family:FontAwesome;"></span></div>';
                 gridHtml += '<div class="mce-fontawesome-panel-content">';
 
                 for (var y = 0; y < (iconGroup.length / width); y++) {
@@ -53,7 +53,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
                         if (iconGroup[y * width + x]) {
                             id = iconGroup[y * width + x].id;
                             name = iconGroup[y * width + x].name;
-                            gridHtml += '<div class="mce-icon-cell js-mce-fontawesome-insert" data-id="' + id + '"' + (group === 'spinnerIcons' ? ' data-spin="true"' : '' ) + '>';
+                            gridHtml += '<div title="'+name+'" class="mce-icon-cell js-mce-fontawesome-insert" data-id="' + id + '"' + (group === 'spinnerIcons' ? ' data-spin="true"' : '' ) + '>';
                                 gridHtml += '<span class="fa fa-' + id + (group === 'spinnerIcons' ? ' fa-spin' : '' ) +'"></span>';
                             gridHtml += '</div>';
                         }
@@ -151,6 +151,10 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
         firstAccordionContent.style.height = nextHeight + 'px';
         firstAccordionContent.style.transitionDuration = transitionCalc(nextHeight);
 
+        var accordionIcon = firstAccordion.querySelector('.mce-fontawesome-accordion-icon');
+        accordionIcon.classList.remove('fa-chevron-right');
+        accordionIcon.classList.add('fa-chevron-down');
+
         function toggleItem() {
             // Check if search is in use
             if (document.querySelector('.mce-fontawesome-panel-search')) {
@@ -170,6 +174,9 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
                 accordionPanel = accordionItems[i].querySelector('.mce-fontawesome-panel-content');
                 accordionPanel.style.height = '0';
+                accordionIcon = accordionItems[i].querySelector('.mce-fontawesome-accordion-icon');
+                accordionIcon.classList.remove('fa-chevron-down');
+                accordionIcon.classList.add('fa-chevron-right');
             }
 
             // Show this item if it was previously hidden
@@ -181,6 +188,10 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
                 accordionItemContent.style.height = '0';
                 accordionItem.classList.add('mce-fontawesome-panel-accordion-open');
                 accordionItemContent.style.transitionDuration = transitionCalc(nextHeight);
+
+                var accordionIcon = accordionItem.querySelector('.mce-fontawesome-accordion-icon');
+                accordionIcon.classList.remove('fa-chevron-right');
+                accordionIcon.classList.add('fa-chevron-down');
 
                 // Force reflow
                 window.getComputedStyle(accordionItemContent).opacity;
