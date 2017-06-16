@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TinyMCE FontAwesome Plugin Demo</title>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <textarea></textarea>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.6.3/tinymce.min.js"></script>
+        <script>
+            let dirName = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+            tinymce.PluginManager.load('fontawesome', dirName + '/fontawesome/plugin.min.js');
+            tinymce.init({
+                selector:'textarea',
+                content_css: 'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+                noneditable_noneditable_class: 'fa',
+                plugins: '-fontawesome noneditable',
+                toolbar: 'fontawesome',
+                extended_valid_elements: 'span[*]'
+            });
+        </script>
+    </body>
+</html>

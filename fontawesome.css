@@ -1,5 +1,5 @@
-.mce-fontawesome-panel .mce-container-body > .mce-container, 
-.mce-fontawesome-panel .mce-container-body > .mce-container > .mce-container-body { 
+.mce-fontawesome-panel .mce-container-body > .mce-container,
+.mce-fontawesome-panel .mce-container-body > .mce-container > .mce-container-body {
     height: auto !important;
     width: 670px;
 }
@@ -11,6 +11,8 @@
 }
 
 .mce-fontawesome-panel-title {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 4px;
@@ -30,11 +32,16 @@
 }
 
 .mce-fontawesome-panel-accordion-open .mce-fontawesome-panel-title {
-    border-bottom-color: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .mce-fontawesome-panel-accordion:first-child .mce-fontawesome-panel-title {
     margin-top: 0;
+}
+
+.mce-fontawesome-panel-accordion-indicator {
+    margin-left: auto;
+    font-family: FontAwesome;
 }
 
 .mce-fontawesome-panel-content {

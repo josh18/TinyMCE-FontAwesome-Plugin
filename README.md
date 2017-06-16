@@ -1,6 +1,6 @@
 # TinyMCE FontAwesome Plugin
 
-###### v2.0.9
+###### v2.1.0
 
 A plugin that lets you insert FontAwesome icons via TinyMCE. Currently uses FontAwesome v4.6.3 and is tested on TinyMCE v4.4.2.
 
