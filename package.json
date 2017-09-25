@@ -1,0 +1,19 @@
+{
+  "name": "tinymce-fontawesome-plugin",
+  "version": "2.1.1",
+  "description": "FontAwesome for TinyMCE 4",
+  "keywords": [
+    "tinymce",
+    "font-awesome"
+  ],
+  "license": "MIT",
+  "main": "fontawesome/plugin.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josh18/TinyMCE-FontAwesome-Plugin.git"
+  },
+  "homepage": "https://github.com/josh18/TinyMCE-FontAwesome-Plugin#readme",
+  "bugs": {
+    "url": "https://github.com/josh18/TinyMCE-FontAwesome-Plugin/issues"
+  }
+}
