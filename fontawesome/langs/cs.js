@@ -1,0 +1,21 @@
+tinymce.addI18n('cs', {
+    'Icons': 'Ikony',
+    'Web Application': 'WebovĂ© aplikace',
+    'File Type': 'Typ souboru',
+    'Spinner': 'Spinner',
+    'Form Control': 'FormulĂˇĹ™ovĂ© prvky',
+    'Currency': 'MÄ›ny',
+    'Text Editor': 'TextovĂ˝ editor',
+    'Directional': 'SmÄ›rovĂ© ikony',
+    'Video Player': 'Video pĹ™ehrĂˇvaÄŤ',
+    'Brand': 'ZnaÄŤky',
+    'Medical': 'ZdravotnictvĂ',
+    'Transportation': 'Doprava',
+    'Gender': 'PohlavĂ',
+    'Payment': 'Platba',
+    'Chart': 'Graf',
+    'Hand': 'Ruce',
+    'Search': 'Hledat',
+    'Accessibility': 'PĹ™Ăstupnost',
+    'No icons matched your search': 'Ĺ˝ĂˇdnĂˇ ikona neodpovĂ­dĂˇ vaĹˇemu vyhledĂˇvĂˇnĂ'
+});
