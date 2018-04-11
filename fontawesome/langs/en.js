@@ -16,5 +16,6 @@ tinymce.addI18n('en', {
     'Chart': 'Chart',
     'Hand': 'Hand',
     'Search': 'Search',
+    'Accessibility': 'Accessibility',
     'No icons matched your search': 'No icons matched your search'
 });
