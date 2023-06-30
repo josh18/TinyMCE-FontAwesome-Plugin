@@ -114,6 +114,7 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
 
         win = editor.windowManager.open({
             autoScroll: true,
+			tags: { required: true},
             width: 690,
             height: 500,
             title: translate('Icons'),
@@ -128,6 +129,9 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             ],
             buttons: [{
                 text: translate('Close'),
+				onAction: function() {
+					win.close();
+				},
                 onclick: function() {
                     win.close();
                 }
@@ -371,16 +375,20 @@ tinymce.PluginManager.add('fontawesome', function(editor, url) {
             href: 'https://pro.fontawesome.com/releases/' + version + '/css/all.css'
         });
         document.getElementsByTagName('head')[0].appendChild(falink);
-    });		
+    });	
 
-    editor.addButton('fontawesome', {
+    editor.ui.registry.addButton('fontawesome', {
         icon: 'flag',
         tooltip: translate('Icons'),
+        tags: { required: true},
+        onAction: showDialog,
         onclick: showDialog
     });
 
-    editor.addMenuItem('fontawesome', {
+    editor.ui.registry.addMenuItem('fontawesome', {
         icon: 'flag',
+        tags: { required: true},
+        onAction: showDialog,
         onclick: showDialog,
         context: 'insert'
     });
